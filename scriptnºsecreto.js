@@ -7,7 +7,7 @@ exibirMensagemInicial();
 
 function exibirMensagemInicial(){
     mostrarTextoNaTela('h1', 'Jogo do Número Secreto🔥');
-    mostrarTextoNaTela('p', 'Você tem 3 tentativas! Escolha um número de 1 a 30!');
+    mostrarTextoNaTela('p', 'Você tem 3 tentativas! Escolha um número de 1 a 20!');
 }
 
 
@@ -82,10 +82,10 @@ function mostrarTextoNaTela(tag, texto){
 
 
 function gerarNumeroAleatorio(){
-    let numeroGerado = parseInt(Math.random() *30 + 1);
+    let numeroGerado = parseInt(Math.random() *20 + 1);
     let quantidadeDeElementos = listaDeNumerosSorteados.length;
 
-    if(quantidadeDeElementos == 30){
+    if(quantidadeDeElementos == 20){
         listaDeNumerosSorteados = [];
     }
 
